@@ -24,7 +24,7 @@ const RootQuery=new GraphQLObjectType({
             args:{
                 id:{type:GraphQLID}},
                 resolve(parent,args){
-                    //console.log(typeof(args.id))
+                    console.log(typeof(args.id))
                    return _.find(movies,{id:args.id});
             }
         }
